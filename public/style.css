@@ -1,0 +1,39 @@
+.header {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-left: 20px;
+    color: blue;
+    margin-left: 25%;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    border: 2px solid black;
+}
+
+.img {
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+    position: flex;
+    float: left;
+
+}
+
+.name {
+    margin-left: 60px;
+    padding-top: 9px;
+    
+}
+.detail {
+    font: 1em sans-serif;
+    padding: 5px;
+}
+
+Footer {
+    margin-bottom: 0px;
+
+}
