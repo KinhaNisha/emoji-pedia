@@ -32,6 +32,8 @@ html {
 
 .emoji-contaner {
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex; /* default flew direction is row*/
     flex-wrap: wrap;
     justify-content: center;
@@ -191,7 +193,7 @@ p {
   }
 
   .emoji-logo {
-      font-size: 8rem;
+      font-size: 7.5rem;
   }
 }
 
