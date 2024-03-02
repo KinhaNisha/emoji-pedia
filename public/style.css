@@ -1,39 +1,151 @@
-.header {
-    font-size: 50px;
-    text-decoration: underline;
-    margin-left: 20px;
-    color: blue;
-    margin-left: 25%;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
-    width: 50%;
-    height: 100%;
-    margin: auto;
-    padding: auto;
-    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stacking children vertically */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center;
+    background-color: #ddd;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-.img {
-    width: 45px;
-    height: 45px;
-    font-size: 40px;
-    position: flex;
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.emoji-contaner {
+    width: 100%;
+    display: flex; /* default flew direction is row*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji-logo {
+    font-size: 12rem;
+}
+
+.emoji-name {
+    font-family: monospace, cursive, serif, sans-serif;
+    margin-bottom: 50px;
+    /* text-decoration: underline; */
+    /* text-decoration-color: #00ff00; */
+    /* border-bottom: 1px solid rgb(135, 32, 184); */
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.emoji-item {
+    height: 250px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 8px;
+    background-color: gray;
+}
+
+
+/*--------------------------------------*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Make sure the overlay is above all other content */
+  }
+  
+  .card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+  
+  .close {
+    font-size: 34px;
+    color: red;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    left: 0px;
+  }
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+    /* padding-top: 10px; Space for the close button */
+  }
+  
+  .card-emoji {
+    position: relative;
+    top: -25px;
+    left: -20px;
+    font-size: 4rem;
+  }
+
+  /* Remove this if not like */
+  /* .card-emoji {
     float: left;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    font-size: 4rem;
+  } */
 
-}
-
-.name {
-    margin-left: 60px;
-    padding-top: 9px;
-    
-}
-.detail {
-    font: 1em sans-serif;
-    padding: 5px;
-}
-
-Footer {
-    margin-bottom: 0px;
-
-}
+  .card-text {
+    flex: 1;
+  }
+  
+  .card-fullname {
+    font-weight: bold;
+    font-family: cursive, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .card-meaning {
+    flex: 1;
+    text-align: justify;
+    overflow: hidden;
+    font-family: monospace, cursive, serif, sans-serif;
+  } 
+  .card-content::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
