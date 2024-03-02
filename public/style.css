@@ -82,7 +82,8 @@ p {
   }
   
   .card {
-    width: 300px;
+    width: 80%; /* Make width responsive */
+    max-width: 400px;
     background: white;
     border-radius: 10px;
     padding: 20px;
@@ -149,3 +150,70 @@ p {
     display: table;
     clear: both;
   }
+ 
+@media screen and (max-width: 800px) {
+  .container {
+      height: auto;
+  }
+
+  .emoji-contaner {
+      justify-content: space-between;
+      padding: 0 2%;
+  }
+
+  .emoji-item {
+      width: 31%;
+      height: 180px;
+      margin: 1% 1%;
+      box-sizing: border-box;
+  }
+
+  .emoji-logo {
+      font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+      height: auto;
+  }
+
+  .emoji-contaner {
+      justify-content: space-between;
+      padding: 0 2%;
+  }
+
+  .emoji-item {
+      width: 48%;
+      height: 180px;
+      margin: 1% 1%;
+      box-sizing: border-box;
+  }
+
+  .emoji-logo {
+      font-size: 8rem;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .container {
+      height: auto;
+  }
+
+  .emoji-contaner {
+      justify-content: space-between;
+      padding: 0 2%;
+  }
+
+  .emoji-item {
+      width: 98%;
+      height: 180px;
+      margin: 1% 1%;
+      box-sizing: border-box;
+  }
+
+  .emoji-logo {
+      font-size: 8rem;
+  }
+}
