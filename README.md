@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Emoji-pedia](https://github.com/KinhaNisha/emoji-pedia/blob/main/Screenshot%202024-04-02%20142341.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
